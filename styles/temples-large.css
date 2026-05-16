@@ -4,7 +4,7 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
@@ -17,8 +17,4 @@
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-.navigation a {
-    display: block;
 }
