@@ -1,0 +1,82 @@
+/* styles/place.css */
+
+:root {
+    --primary-color: #008753;
+    --secondary-color: #ffffff;
+    --dark-color: #222222;
+    --light-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* HERO */
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* MAIN */
+
+main {
+    padding: 1rem;
+}
+
+/* CARDS */
+
+.card {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* WEATHER */
+
+.weather-icon {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    margin-top: 1rem;
+}
+
+.card {
+    min-height: 280px;
+}

@@ -1,0 +1,88 @@
+<!-- place.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria - culture, weather, and beautiful landscapes.">
+    
+    <title>Nigeria | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <picture>
+                <source
+                    srcset="images/hero-large.jpg"
+                    media="(min-width: 768px)"
+                >
+
+                <img
+                    src="images/hero-small.jpg"
+                    alt="Beautiful view of Nigeria"
+                    width="500"
+                    height="250"
+                >
+            </picture>
+
+        </section>
+
+        <!-- DATA SECTION -->
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Population:</strong> 223 Million</p>
+            <p><strong>Language:</strong> English</p>
+            <p><strong>Currency:</strong> Naira (₦)</p>
+            <p><strong>Region:</strong> West Africa</p>
+            <p><strong>Famous For:</strong> Music, Culture, Oil, Food</p>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="card weather">
+
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather.jpg"
+                alt="weather icon"
+                class="weather-icon"
+            >
+
+            <p><strong>Temperature:</strong> <span id="temp">8</span>°C</p>
+
+            <p><strong>Conditions:</strong> Cloudy</p>
+
+            <p><strong>Wind Speed:</strong> <span id="speed">15</span> km/h</p>
+
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> | Nigeria Country Page
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
