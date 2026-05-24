@@ -25,11 +25,15 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 /* HERO */
+
+.hero {
+    margin-top: 1rem;
+}
 
 .hero img {
     width: 100%;
@@ -50,17 +54,18 @@ main {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    min-height: 280px;
 }
 
 .card h2 {
-    margin-bottom: 1rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
-/* WEATHER */
+/* WEATHER ICON */
 
 .weather-icon {
-    width: 60px;
+    width: 70px;
     margin-bottom: 1rem;
 }
 
@@ -71,12 +76,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-.hero {
     margin-top: 1rem;
-}
-
-.card {
-    min-height: 280px;
 }

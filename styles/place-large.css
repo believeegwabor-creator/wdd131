@@ -5,6 +5,7 @@
     main {
         max-width: 1200px;
         margin: auto;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -14,17 +15,13 @@
         grid-column: 1 / 3;
     }
 
-    .card {
-        min-height: 300px;
-    }
-
-    /* PSEUDO ELEMENT REQUIREMENT */
+    /* PSEUDO ELEMENT */
 
     .weather h2::after {
         content: " ⛅";
     }
 
-    /* Hide SVG icon in large view */
+    /* HIDE SVG ON LARGE VIEW */
 
     .weather-icon {
         display: none;

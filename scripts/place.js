@@ -1,6 +1,6 @@
 // scripts/place.js
 
-// FOOTER YEAR
+// CURRENT YEAR
 
 const currentYear = document.querySelector("#currentyear");
 
@@ -13,10 +13,13 @@ document.querySelector("#lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
 
+
 // STATIC WEATHER VALUES
 
 const temperature = 8;
+
 const windSpeed = 15;
+
 
 
 // WIND CHILL FUNCTION
@@ -32,14 +35,17 @@ function calculateWindChill(temp, speed) {
 }
 
 
+
 // DISPLAY WIND CHILL
 
 let windChill = "N/A";
+
 
 if (temperature <= 10 && windSpeed > 4.8) {
 
     windChill =
     `${calculateWindChill(temperature, windSpeed)} °C`;
 }
+
 
 document.querySelector("#windchill").textContent = windChill;
