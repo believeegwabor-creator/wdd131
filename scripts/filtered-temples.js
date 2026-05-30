@@ -1,4 +1,5 @@
 const temples = [
+
   {
     templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
@@ -70,41 +71,29 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
   }
+
 ];
 
-// Select the temple container
+// Select container
 const container = document.querySelector(".temple-container");
 
-// Function to display temples
+// Display temples
 function displayTemples(templesList) {
 
-  // Clear existing content
   container.innerHTML = "";
 
-  // Loop through temples
   templesList.forEach(temple => {
 
-    // Create temple card
     const card = document.createElement("section");
 
-    // Add content to card
     card.innerHTML = `
       <h3>${temple.templeName}</h3>
 
-      <p>
-        <strong>Location:</strong>
-        ${temple.location}
-      </p>
+      <p><strong>Location:</strong> ${temple.location}</p>
 
-      <p>
-        <strong>Dedicated:</strong>
-        ${temple.dedicated}
-      </p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 
-      <p>
-        <strong>Area:</strong>
-        ${temple.area.toLocaleString()} square feet
-      </p>
+      <p><strong>Area:</strong> ${temple.area.toLocaleString()} square feet</p>
 
       <img
         src="${temple.imageUrl}"
@@ -113,15 +102,14 @@ function displayTemples(templesList) {
       >
     `;
 
-    // Add card to container
     container.appendChild(card);
   });
 }
 
-// Display all temples on page load
+// Initial display
 displayTemples(temples);
 
-// HOME filter
+// Home
 document.querySelector("#home").addEventListener("click", () => {
 
   document.querySelector("#page-title").textContent = "Home";
@@ -129,7 +117,7 @@ document.querySelector("#home").addEventListener("click", () => {
   displayTemples(temples);
 });
 
-// OLD filter
+// Old
 document.querySelector("#old").addEventListener("click", () => {
 
   document.querySelector("#page-title").textContent = "Old Temples";
@@ -141,7 +129,7 @@ document.querySelector("#old").addEventListener("click", () => {
   displayTemples(oldTemples);
 });
 
-// NEW filter
+// New
 document.querySelector("#new").addEventListener("click", () => {
 
   document.querySelector("#page-title").textContent = "New Temples";
@@ -153,7 +141,7 @@ document.querySelector("#new").addEventListener("click", () => {
   displayTemples(newTemples);
 });
 
-// LARGE filter
+// Large
 document.querySelector("#large").addEventListener("click", () => {
 
   document.querySelector("#page-title").textContent = "Large Temples";
@@ -165,7 +153,7 @@ document.querySelector("#large").addEventListener("click", () => {
   displayTemples(largeTemples);
 });
 
-// SMALL filter
+// Small
 document.querySelector("#small").addEventListener("click", () => {
 
   document.querySelector("#page-title").textContent = "Small Temples";
@@ -177,10 +165,10 @@ document.querySelector("#small").addEventListener("click", () => {
   displayTemples(smallTemples);
 });
 
-// Footer current year
+// Footer year
 document.querySelector("#currentyear").textContent =
   new Date().getFullYear();
 
-// Footer last modified
+// Last modified
 document.querySelector("#lastModified").textContent =
   `Last Modified: ${document.lastModified}`;
