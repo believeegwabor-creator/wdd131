@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+header {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wireframe {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px dashed #1E88E5;
+}
+
+footer {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
