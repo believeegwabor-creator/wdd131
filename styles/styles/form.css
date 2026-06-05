@@ -6,15 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #222;
+    line-height: 1.6;
 }
 
 header {
-    background: #003366;
+    background-color: #003366;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 main {
@@ -33,9 +34,11 @@ form {
     margin-bottom: 1.5rem;
 }
 
-label {
+label,
+p {
     display: block;
-    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
 }
 
 select,
@@ -44,37 +47,37 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: .75rem;
-    margin-top: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.rating label {
-    display: block;
-    font-size: 1.3rem;
-    cursor: pointer;
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: .5rem;
 }
 
 .submit-btn {
     width: 100%;
     padding: 1rem;
-    border: none;
-    background: #003366;
+    background-color: #003366;
     color: white;
-    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .submit-btn:hover {
-    background: #0055aa;
+    background-color: #0055aa;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background: #003366;
+    background-color: #003366;
     color: white;
+    padding: 1rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     form {
         padding: 3rem;
     }
