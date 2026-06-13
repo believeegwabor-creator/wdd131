@@ -1,0 +1,233 @@
+/* ---------- Global Styles ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+background-color: #f5f7fa;
+color: #333;
+}
+
+/* ---------- Header ---------- */
+
+header {
+background-color: #003366;
+color: white;
+padding: 1rem;
+}
+
+.logo h1 {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.navigation {
+display: flex;
+justify-content: center;
+list-style: none;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.navigation a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.navigation a:hover,
+.navigation a.active {
+color: #ffd700;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+display: grid;
+gap: 1rem;
+padding: 2rem;
+}
+
+.hero img {
+width: 100%;
+border-radius: 10px;
+}
+
+.hero-content {
+text-align: center;
+}
+
+.hero-content h2 {
+margin-bottom: 1rem;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+display: inline-block;
+background-color: #003366;
+color: white;
+padding: 0.8rem 1.2rem;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 1rem;
+}
+
+.btn:hover {
+background-color: #0055aa;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+padding: 2rem;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 1.5rem;
+}
+
+/* ---------- Cards ---------- */
+
+.feature-grid,
+.service-grid {
+display: grid;
+gap: 1rem;
+}
+
+.card {
+background-color: white;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+margin-bottom: 0.5rem;
+}
+
+/* ---------- Page Banner ---------- */
+
+.page-banner {
+text-align: center;
+background-color: #e9eef5;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+}
+
+table th,
+table td {
+border: 1px solid #ddd;
+padding: 12px;
+}
+
+table th {
+background-color: #003366;
+color: white;
+}
+
+/* ---------- Form ---------- */
+
+.form-section {
+max-width: 700px;
+margin: auto;
+}
+
+form {
+display: grid;
+gap: 1rem;
+}
+
+input,
+textarea,
+select {
+padding: 0.8rem;
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#bookingMessage {
+margin-top: 1rem;
+font-weight: bold;
+}
+
+/* ---------- Booking List ---------- */
+
+.saved-bookings {
+max-width: 900px;
+margin: auto;
+}
+
+.booking-card {
+background: white;
+padding: 1rem;
+margin-bottom: 1rem;
+border-left: 5px solid #003366;
+border-radius: 5px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+background-color: #003366;
+color: white;
+text-align: center;
+padding: 1.5rem;
+}
+
+footer a {
+color: #ffd700;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media screen and (min-width: 768px) {
+
+.hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.feature-grid,
+.service-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.logo h1 {
+    margin-bottom: 0.5rem;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+}
